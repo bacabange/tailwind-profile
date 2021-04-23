@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind css</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css " rel="stylesheet">
+  <link rel="stylesheet" href="build/tailwind.css">
+</head>
+<body class="bg-gray-100 mediano:bg-green-600">
+  <header class="w-full py-4 px-2 bg-white flex justify-center border-b-1 border-gray-400 shadow-sm lg:justify-between">
+    <img class="w-52" src="images/Logo.png" alt="El developer">
+
+    <a href="#" class="btn hidden lg:inline-block">Contact me</a>
+  </header>
+
+  <main class="container m-auto p-4">
+    <!-- Card profile -->
+    <div class="bg-white px-6 py-8 mb-4 shadow-lg rounded-lg md:p-0 overflow-hidden">
+      <div class="mt-6 md:flex md:p-0 md:mt-0 ">
+        <img class="w-32 h-32  mx-auto rounded-full object-cover lg:mx-0 md:w-48 lg:w-96 md:h-auto md:rounded-none" src="images/dev-profile.jpg" alt="">
+        <div class="pt-6 text-center space-y-4 md:p-8 md:text-left lg:p-24 lg:pl-12">
+          <h1 class="text-3xl font-bold text-primary">Robert King</h1>
+          <span class="text-sm text-gray- 400 font-light">Frontend Developer at Silicon Valley Col</span>
+
+          <p class="text-md text-gray-500 font-light">Developer and Designer with about +9 years creating and developing things for web and mobile devices</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-4">
+      <!-- Aside -->
+      <div class="col-span-1">
+        <div class="bg-white py-4 shadow-lg rounded-lg lg:space-y-4">
+          <!-- Progress -->
+          <div class="border-b px-4 pt-2 pb-6 border-gray-200">
+            <p class="text-sm font-semibold mb-2">Semi-senior</p>
+            <div class="relative pt-1">
+              <div class="overflow-hidden h-2 flex rounded bg-gray-100">
+                <div style="width:70%" class="flex flex-col justify-center bg-gradient-to-r from-orange to-primary rounded"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Info -->
+          <div class="p-4 grid grid-cols-2 gap-1 lg:grid-cols-1">
+            <div><i class="fa fa-map-pin text-gray-400 w-6"></i> Colombia</div>
+            <div><i class="fa fa-bolt text-gray-400 w-6"></i> Available</div>
+            <div><i class="fa fa-envelope text-gray-400 w-6"></i> me@stiven.dev</div>
+            <div><i class="fa fa-twitter text-gray-400 w-6"></i> @bacabange</div>
+          </div>
+          <!-- Social and call to action -->
+          <div class="p-4 flex flex-row items-center justify-between lg:flex-col-reverse lg:py-0">
+            <div class="flex items-center text-2xl text-gray-400 space-x-1">
+              <a href="#" class="inline-block px-2"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="inline-block px-2"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="inline-block px-2"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="inline-block px-2"><i class="fa fa-github"></i></a>
+            </div>
+
+            <!-- <a href="#" class="inline-block py-4 px-6 bg-gradient-to-r from-orange to-primary text-white text-sm font-semibold rounded-full">Let's Talk</a> -->
+            <a href="#" class="btn md:mb-2 active:ring-2 ring-offset-2 ring-primary ring-opacity-50">Let's Talk</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-3">
+        <!-- Skills -->
+        <div class="bg-white px-6 py-8 mb-4 shadow-lg rounded-lg space-y-4">
+          <div class="flex flex-row justify-between items-center">
+            <h2 class="text-2xl font-semibold">Skills</h2>
+
+            <div class="flex flex-row space-x-2">
+              <div class="flex flex-row items-center text-gray-400">
+                <span class="block h-3 w-3 rounded-full bg-primary mr-1"></span> Frontend
+              </div>
+              <div class="flex flex-row items-center text-gray-400">
+                <span class="block h-3 w-3 rounded-full bg-secondary mr-1"></span> Backend
+              </div>
+            </div>
+          </div>
+
+          <!-- Tags -->
+          <div class="flex flex-row flex-wrap items-start">
+            <!-- <span class="inline-block px-3 py-2 border-2 border-primary rounded-full text-gray-500">Javascript</span>
+            <span class="inline-block px-3 py-2 border-2 border-secondary rounded-full text-gray-500">Php</span> -->
+            <span class="skill skill-secondary">Django</span>
+            <span class="skill skill-primary">Javascript</span>
+            <span class="skill skill-primary">Tailwind</span>
+            <span class="skill skill-secondary">Python</span>
+            <span class="skill skill-secondary">Nodejs</span>
+            <span class="skill skill-primary">React</span>
+            <span class="skill skill-primary">React Native</span>
+            <span class="skill skill-primary">Sketch</span>
+            <span class="skill skill-primary">CSS</span>
+            <span class="skill skill-secondary">Laravel</span>
+            <span class="skill skill-primary">Jest</span>
+            <span class="skill skill-secondary">Php</span>
+            <span class="skill skill-primary">Html</span>
+          </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="bg-white px-6 py-8 mb-4 shadow-lg rounded-lg row-span-2">
+          <h2 class="text-2xl font-semibold mb-8">Projects</h2>
+
+          <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <div class="text-center">
+              <figure class="rounded-lg overflow-hidden">
+                <img class="object-cover transition transform hover:scale-110" src="images/projects/1.jpg" alt="Example" />
+              </figure>
+              <span class="text-gray-400 text-sm">www.example.com</span>
+            </div>
+            <div class="text-center">
+              <figure class="rounded-lg overflow-hidden">
+                <img class="object-cover transition transform hover:scale-110" src="images/projects/2.jpg" alt="Example" />
+              </figure>
+              <span class="text-gray-400 text-sm">www.example.com</span>
+            </div>
+            <div class="text-center">
+              <figure class="rounded-lg overflow-hidden">
+                <img class="object-cover transition transform hover:scale-110" src="images/projects/3.jpg" alt="Example" />
+              </figure>
+              <span class="text-gray-400 text-sm">www.example.com</span>
+            </div>
+            <div class="text-center">
+              <figure class="rounded-lg overflow-hidden">
+                <img class="object-cover transition transform hover:scale-110" src="images/projects/4.jpg" alt="Example" />
+              </figure>
+              <span class="text-gray-400 text-sm">www.example.com</span>
+            </div>
+            <div class="text-center">
+              <figure class="rounded-lg overflow-hidden">
+                <img class="object-cover transition transform hover:scale-110" src="images/projects/5.jpg" alt="Example" />
+              </figure>
+              <span class="text-gray-400 text-sm">www.example.com</span>
+            </div>
+            <div class="text-center">
+              <figure class="rounded-lg overflow-hidden">
+                <img class="object-cover transition transform hover:scale-110" src="images/projects/6.jpg" alt="Example" />
+              </figure>
+              <span class="text-gray-400 text-sm">www.example.com</span>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+</body>
+</html>

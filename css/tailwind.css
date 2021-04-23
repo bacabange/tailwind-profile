@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer base {
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+} */
+
+@layer components{
+  .btn {
+    @apply inline-block py-4 px-6 bg-gradient-to-r from-orange to-primary text-white text-sm font-semibold rounded-full;
+  }
+
+  .skill {
+    @apply inline-block px-3 py-2 border-2 rounded-full text-gray-500 mb-2 mr-2;
+  }
+  .skill-primary {
+    @apply border-primary;
+  }
+  .skill-secondary {
+    @apply border-secondary;
+  }
+}
+
+/* @layer utilities {
+  @variants hover, focus {
+    .filter-none {
+      filter: none;
+    }
+    .filter-grayscale {
+      filter: grayscale(100%);
+    }
+  }
+} */
