@@ -9,32 +9,37 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css " rel="stylesheet">
+
   <link rel="stylesheet" href="build/tailwind.css">
 </head>
-<body class="bg-gray-100 mediano:bg-green-600">
+
+<body class="bg-gray-100">
   <header class="w-full py-4 px-2 bg-white flex justify-center border-b-1 border-gray-400 shadow-sm lg:justify-between">
     <img class="w-52" src="images/Logo.png" alt="El developer">
-
+    <!-- Cuado se construya el lg -->
     <a href="#" class="btn hidden lg:inline-block">Contact me</a>
   </header>
 
   <main class="container m-auto p-4">
     <!-- Card profile -->
-    <div class="bg-white px-6 py-8 mb-4 shadow-lg rounded-lg md:p-0 overflow-hidden">
-      <div class="mt-6 md:flex md:p-0 md:mt-0 ">
-        <img class="w-32 h-32  mx-auto rounded-full object-cover lg:mx-0 md:w-48 lg:w-96 md:h-auto md:rounded-none" src="images/dev-profile.jpg" alt="">
+    <div class="bg-white px-6 py-8 mb-4 shadow-lg rounded-lg overflow-hidden md:p-0">
+      <div class="mt-6 md:flex md:p-0 md:mt-0">
+        <img class="w-32 h-32 mx-auto rounded-full object-cover md:w-48 lg:w-96 md:h-auto md:rounded-none lg:mx-0" src="images/dev-profile.jpg" alt="Robert">
         <div class="pt-6 text-center space-y-4 md:p-8 md:text-left lg:p-24 lg:pl-12">
           <h1 class="text-3xl font-bold text-primary">Robert King</h1>
-          <span class="text-sm text-gray- 400 font-light">Frontend Developer at Silicon Valley Col</span>
-
+          <p class="text-sm text-gray-400 font-light">
+            Frontend Developer at Silicon Valley Col
+          </p>
           <p class="text-md text-gray-500 font-light">Developer and Designer with about +9 years creating and developing things for web and mobile devices</p>
         </div>
       </div>
     </div>
-
+    <!-- 2Grid cuando lg -->
     <div class="grid grid-cols-1 lg:grid-cols-4 gap-4">
       <!-- Aside -->
       <div class="col-span-1">
+
+        <!-- 1Primero esto -->
         <div class="bg-white py-4 shadow-lg rounded-lg lg:space-y-4">
           <!-- Progress -->
           <div class="border-b px-4 pt-2 pb-6 border-gray-200">
@@ -46,11 +51,11 @@
             </div>
           </div>
           <!-- Info -->
-          <div class="p-4 grid grid-cols-2 gap-1 lg:grid-cols-1">
-            <div><i class="fa fa-map-pin text-gray-400 w-6"></i> Colombia</div>
-            <div><i class="fa fa-bolt text-gray-400 w-6"></i> Available</div>
-            <div><i class="fa fa-envelope text-gray-400 w-6"></i> me@stiven.dev</div>
-            <div><i class="fa fa-twitter text-gray-400 w-6"></i> @bacabange</div>
+          <div class="p-4 grid grid-cols-2 gap-3 lg:gap-1 lg:grid-cols-1">
+            <div><i class="fa fa-map-pin text-gray-400 w-4 lg:w-6"></i> Colombia</div>
+            <div><i class="fa fa-bolt text-gray-400 w-4 lg:w-6"></i> Available</div>
+            <div><i class="fa fa-envelope text-gray-400 w-4 lg:w-6"></i> me@stiven.dev</div>
+            <div><i class="fa fa-twitter text-gray-400 w-4 lg:w-6"></i> @bacabange</div>
           </div>
           <!-- Social and call to action -->
           <div class="p-4 flex flex-row items-center justify-between lg:flex-col-reverse lg:py-0">
@@ -65,10 +70,12 @@
             <a href="#" class="btn md:mb-2 active:ring-2 ring-offset-2 ring-primary ring-opacity-50">Let's Talk</a>
           </div>
         </div>
+
       </div>
 
       <div class="lg:col-span-3">
         <!-- Skills -->
+        <!-- 1Primero esto -->
         <div class="bg-white px-6 py-8 mb-4 shadow-lg rounded-lg space-y-4">
           <div class="flex flex-row justify-between items-center">
             <h2 class="text-2xl font-semibold">Skills</h2>
@@ -87,6 +94,8 @@
           <div class="flex flex-row flex-wrap items-start">
             <!-- <span class="inline-block px-3 py-2 border-2 border-primary rounded-full text-gray-500">Javascript</span>
             <span class="inline-block px-3 py-2 border-2 border-secondary rounded-full text-gray-500">Php</span> -->
+
+
             <span class="skill skill-secondary">Django</span>
             <span class="skill skill-primary">Javascript</span>
             <span class="skill skill-primary">Tailwind</span>
@@ -104,7 +113,7 @@
         </div>
 
         <!-- Projects -->
-        <div class="bg-white px-6 py-8 mb-4 shadow-lg rounded-lg row-span-2">
+        <div class="bg-white px-6 py-8 mb-4 shadow-lg rounded-lg">
           <h2 class="text-2xl font-semibold mb-8">Projects</h2>
 
           <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">

@@ -1,9 +1,9 @@
 module.exports = {
   purge: {
-    enabled: true,
+    enabled: false,
     content: ['./**/*.html',]
   },
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
@@ -14,6 +14,9 @@ module.exports = {
       fontFamily: {
         sans: ['Montserrat', 'Roboto', 'sans-serif']
       },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--gradient-color-stops))',
+      }
       // screens: {
       //   'mediano': {
       //     min: '860px', max: '870px'
